@@ -1,0 +1,40 @@
+/* Hover Effects */
+.nav-link:hover {
+    color: #00bfff !important;
+    transition: color 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadein {
+    animation: fadeInUp 1s ease-in;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
